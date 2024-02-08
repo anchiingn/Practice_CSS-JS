@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // }
 
 
-    //reveal text  useSplitType from UNPKG
+    //reveal text  useSplitType from U
     const reveal = document.querySelectorAll('.reveal')
     reveal.forEach((char, i) => {
         const text = new SplitType(char, {type:'chars'})

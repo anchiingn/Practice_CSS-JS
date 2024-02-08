@@ -1,6 +1,15 @@
+@font-face {
+    font-family: 'Dirga';
+    src: url('Dirga.tff') format('tff');
+}
+
 * {
     margin: 0;
+    /* font-family: Dirga; */
+    /* font-variant-caps: small-caps; */
+    font-feature-settings: "liga" 0;
 }
+
 
 .bg {
     width: 100dvw;
