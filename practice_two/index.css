@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+
+.main_container {
+    height: max-content;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav > div {
+    position: fixed;
+    top: 10px
+}
+
+nav > div.color {
+    color: red;
+}
+
+
+.img_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.img {
+
+    width: 350px;
+    height: 350px;
+}
+
+.img.hidden {
+    opacity: 0; /* Hide when scrolled */
+}
+
+.info_container {
+    display: flex;
+    justify-content: center;
+    height: 100dvh;
+}
