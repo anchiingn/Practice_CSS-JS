@@ -1,0 +1,70 @@
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 50px;
+    opacity: 1;
+    transition: width 1s ease-in-out;
+}
+
+img:hover {
+    width: 100px;
+}
+
+.one {
+    width: 20em;
+    height: 15em;
+    background-color: aqua;
+    animation: fade_in 1s ease-in;
+}
+
+@keyframes fade_in {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.two {
+    position: relative;
+    left: 22em;
+    top: -130px;
+    width: 10em;
+    height: 15em;
+    background-color: pink;
+    animation: fade_up 1s ease-in-out;
+
+}
+
+.three {
+    position: relative;
+    left: 7em;
+    top: -190px;
+    mix-blend-mode: overlay;
+    color: greenyellow;
+    z-index: 10;
+    animation: fade_up 1s ease-in-out;
+}
+
+.three::selection {
+    -webkit-text-stroke: 2px red;
+    color: white;
+    background-color: yellow;
+}
+
+@keyframes fade_up {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
