@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main"></div>
+    
+    <script>
+        const obj = [
+            {'name': 'Boun', 'age': 24},
+            {'name': 'Na', 'age': 26}
+        ]
+
+        const main = document.getElementById('main')
+        const sub = document.createElement('div')            
+        obj.forEach(each => {
+                const e = document.createElement('div')            
+
+                e.innerHTML = `
+                <div> hi ${each.name}</div>
+                <div> hi ${each.age}</div>
+                `
+
+            sub.append(e)
+        })
+        main.append(sub)
+    </script>
+</body>
+</html>

@@ -4,7 +4,6 @@ gsap.registerPlugin(ScrollTrigger);
 document.addEventListener("DOMContentLoaded", function() {
     //transition text
     gsap.to('.t_one', {
-        x: 700,
         duration: 4,
         scrollTrigger: {
             trigger: '.t_one',
