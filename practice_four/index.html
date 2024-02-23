@@ -1,25 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/59ab0aa7fb.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
+    <nav>
+        <div style="font-weight: bold; font-size: 20px;">Logo</div>
+        <div class="link_container">
+            <div class="link_container link">
+                <div>Home</div>
+                <div>About</div>
+                <div>Works</div>
+                <div>Contact</div>
+            </div>
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
     <div id="main"></div>
-    
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        nav {
+            background-color: aqua;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .link_container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .button_bar {
+            display: none;
+        }
+    </style>
+
     <script>
         const obj = [
-            {'name': 'Boun', 'age': 24},
-            {'name': 'Na', 'age': 26}
+            { 'name': 'Boun', 'age': 24 },
+            { 'name': 'Na', 'age': 26 }
         ]
 
         const main = document.getElementById('main')
-        const sub = document.createElement('div')            
+        const sub = document.createElement('div')
         obj.forEach(each => {
-                const e = document.createElement('div')            
+            const e = document.createElement('div')
 
-                e.innerHTML = `
+            e.innerHTML = `
                 <div> hi ${each.name}</div>
                 <div> hi ${each.age}</div>
                 `
@@ -27,6 +67,11 @@
             sub.append(e)
         })
         main.append(sub)
+
+       
+
+
     </script>
 </body>
+
 </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Practice Five</title>
+</head>
+<body>
+    <div>
+        <!-- <div class="image">
+            <img src="images/4ECE4C00-2DD9-4506-B709-CE805B94524C 4.jpg" alt="">
+        </div> -->
+        <h1>Let's Caring Your Little Fur Friends</h1>
+    </div>
+    <!-- <div class="image img_top">
+        <img src="images/4ECE4C00-2DD9-4506-B709-CE805B94524C.png" alt="">
+    </div>
+    <div class="image img_bottom">
+        <img src="images/4ECE4C00-2DD9-4506-B709-CE805B94524C 2.png" alt="">
+    </div> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="http://unpkg.com/split-type"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to('.t_one', {
+        duration: 4,
+        scrollTrigger: {
+            trigger: '.t_one',
+            start: 'top center',
+            end: 'bottom center', 
+            scrub: true,
+            markers: true
+        }
+    })
+    </script>
+</body>
+</html>
