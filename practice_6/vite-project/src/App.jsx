@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <div>hello</div>
+      <div>This is a Todo List</div>
     </>
   )
 }
